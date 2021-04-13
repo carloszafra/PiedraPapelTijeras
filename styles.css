@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+}
+
+body,
+input {
+  font-family: "Bebas Neue", cursive;
+}
+
+#name,
+h1 {
+  color: ghostwhite;
+  font-size: 2rem;
+}
+
+.container {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(119, 120, 131, 0.37);
+  backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#item {
+  width: 60%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player2 {
+  display: block;
+}
+
+.player2,
+.result {
+  display: none;
+}
+
+.reset {
+  display: none;
+  padding: 0.3em 1.2em;
+  margin-top: 1rem;
+  border-radius: 2em;
+  text-decoration: none;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 300;
+  color: ghostwhite;
+  background-color: #29d183;
+  text-align: center;
+}
+
+.reset:hover {
+  background-color: #1d8f59;
+}
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Piedra, Papel y Tijeras</title>
+</head>
+
+<body>
+   <h1>Piedra, Papel y Tijeras</h1>
+    <div class="container player1">
+
+        
+        <div id="item">
+            <div id="name">
+                <input type="text" value="jugador 1" onchange="captureInput('1', event.target.value)">
+            </div>
+
+        </div>
+
+        <div id="item">
+            <p>
+            <form action=# >
+                <input type="button" onclick="playerMove('1', 1, '1')" value="Piedra" name="buton1" />
+                <input type="button" onclick="playerMove('1', 2, '1')" value="Papel" name="buton2" />
+                <input type="button" onclick="playerMove('1', 3, '1')" value="Tijeras" name="buton3" /><br />
+            </form>
+            </p>
+        </div>
+    </div>
+
+    <div class="container player2" id="card1">
+
+        
+        <div id="item">
+            <div id="name">
+                <input type="text" value="jugador 2" onchange="captureInput('2', event.target.value)">
+            </div>
+
+        </div>
+
+        <div id="item">
+            <p>
+            <form action=#>
+                <input type="button" onclick="playerMove('2', 1, '2')" value="Piedra" name="buton1" />
+                <input type="button" onclick="playerMove('2', 2, '2')" value="Papel" name="buton2" />
+                <input type="button" onclick="playerMove('2', 3, '2')" value="Tijeras" name="buton3" /><br />
+            </form>
+            </p>
+        </div>
+    </div>
+
+    
+
+    <div class="container result">
+    </div>
+
+    <a class="reset" id="reset">jugar otra vez</a>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
